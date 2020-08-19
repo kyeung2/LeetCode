@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class RemoveDuplicates {
 
-    //
+    // i used the "two-pointer technique.", commonly used with in-place algorithm. without knowing about it.
     public int removeDuplicates(int[] nums) {
 
         int uniqueIndex = 0;
