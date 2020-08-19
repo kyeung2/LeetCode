@@ -7,7 +7,7 @@ public class ValidMountainArray {
 
     public boolean validMountainArray(int[] A) {
 
-        if (A.length < 3)
+        if (A == null || A.length < 3)
             return false;
 
         int phase = -1;
