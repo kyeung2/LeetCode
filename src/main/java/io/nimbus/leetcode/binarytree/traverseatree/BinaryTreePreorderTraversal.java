@@ -1,4 +1,6 @@
-package io.nimbus.leetcode.binarytree;
+package io.nimbus.leetcode.binarytree.traverseatree;
+
+import io.nimbus.leetcode.binarytree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
