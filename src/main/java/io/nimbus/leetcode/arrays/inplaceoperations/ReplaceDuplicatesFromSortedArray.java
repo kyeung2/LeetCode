@@ -2,8 +2,6 @@ package io.nimbus.leetcode.arrays.inplaceoperations;
 
 import io.nimbus.leetcode.arrays.delete.RemoveDuplicates;
 
-import java.util.Arrays;
-
 /**
  * https://leetcode.com/explore/learn/card/fun-with-arrays/511/in-place-operations/3258/
  */
