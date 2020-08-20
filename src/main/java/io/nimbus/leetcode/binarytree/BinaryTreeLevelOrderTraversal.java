@@ -14,7 +14,40 @@ public class BinaryTreeLevelOrderTraversal {
     public List<List<Integer>> levelOrder(TreeNode root) {
 
         List<List<Integer>> res = new ArrayList<>();
-        if(root == null)
+        if (root == null)
+            return res;
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+
+            // the intuition of this solution is that at any one time, the queue only contains the elements of
+            // the current level. So get the size, set in stone, then process up to that point, i.e. up to that level.
+            // then if there is another level repeat in the next iteration of the while loop.
+            int levelSize = queue.size();
+            List<Integer> levelData = new ArrayList<>();
+            res.add(levelData);
+            for (int i = 0; i < levelSize; i++) {
+                TreeNode n = queue.poll();
+                levelData.add(n.val);
+                if (n.left != null) {
+                    queue.offer(n.left);
+                }
+                if (n.right != null) {
+                    queue.offer(n.right);
+                }
+            }
+        }
+
+        return res;
+    }
+
+
+    public List<List<Integer>> levelOrder_level_queue(TreeNode root) {
+
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null)
             return res;
 
         // The idea of the levelQueue was from https://www.programcreek.com/2014/04/leetcode-binary-tree-level-order-traversal-java/
