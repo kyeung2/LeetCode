@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.strings;
+package io.nimbus.leetcode.topinterviewquestionseasy.strings;
 
 import java.util.HashMap;
 import java.util.Map;

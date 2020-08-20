@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.arrays.introduction;
+package io.nimbus.leetcode.arrays101.introduction;
 
 import java.util.Arrays;
 

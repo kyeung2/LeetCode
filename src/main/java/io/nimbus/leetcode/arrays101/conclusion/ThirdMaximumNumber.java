@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.arrays.conclusion;
+package io.nimbus.leetcode.arrays101.conclusion;
 
 /**
  * https://leetcode.com/explore/learn/card/fun-with-arrays/523/conclusion/3231/

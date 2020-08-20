@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.arrays.introduction;
+package io.nimbus.leetcode.arrays101.introduction;
 
 /**
  * https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3238/

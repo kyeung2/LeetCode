@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.arrays.search;
+package io.nimbus.leetcode.arrays101.search;
 
 /**
  * https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3251/

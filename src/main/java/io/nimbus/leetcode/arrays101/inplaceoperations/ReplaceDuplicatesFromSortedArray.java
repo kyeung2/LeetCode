@@ -1,6 +1,6 @@
-package io.nimbus.leetcode.arrays.inplaceoperations;
+package io.nimbus.leetcode.arrays101.inplaceoperations;
 
-import io.nimbus.leetcode.arrays.delete.RemoveDuplicates;
+import io.nimbus.leetcode.arrays101.delete.RemoveDuplicates;
 
 /**
  * https://leetcode.com/explore/learn/card/fun-with-arrays/511/in-place-operations/3258/

@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.arrays.search;
+package io.nimbus.leetcode.arrays101.search;
 
 import java.util.*;
 

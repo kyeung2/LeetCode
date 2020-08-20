@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.arrays.delete;
+package io.nimbus.leetcode.arrays101.delete;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.arrays.conclusion;
+package io.nimbus.leetcode.arrays101.conclusion;
 
 import java.util.ArrayList;
 import java.util.List;

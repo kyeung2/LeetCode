@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.arrays.insert;
+package io.nimbus.leetcode.arrays101.insert;
 
 import java.util.Arrays;
 
