@@ -15,7 +15,7 @@ public class SerializeAndDeserializeBT {
     public String serialize(TreeNode root) {
         List<Integer> values = new ArrayList<>();
         dftValues(root, values);
-        return values.stream().map(x -> x == null ? "NULL" : x.toString()).collect(joining(","));
+        return values.stream().map(x -> x == null ? "N" : x.toString()).collect(joining(","));
     }
 
     private void dftValues(TreeNode node, List<Integer> values) {
@@ -35,7 +35,7 @@ public class SerializeAndDeserializeBT {
 
     private TreeNode buildTree(Queue<String> nodes) {
         String val = nodes.remove();
-        if (val.equals("NULL")) return null;
+        if (val.equals("N")) return null;
         else {
             TreeNode n = new TreeNode(Integer.parseInt(val));
             n.left = buildTree(nodes);
