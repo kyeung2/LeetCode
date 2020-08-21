@@ -6,11 +6,9 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * https://leetcode.com/explore/learn/card/data-structure-tree/133/conclusion/994/
+ * https://leetcode.com/explore/learn/card/data-structure-tree/133/conclusion/1016/
  */
 public class PopulatingNextRightPointersInEachNode2 {
-
-
 
     // previous solution for PopulatingNextRightPointersInEachNode was nearly identical barring the if (n.right != null)
     // check
