@@ -19,23 +19,23 @@ public class ConstructBTFromPreorderAndInorderTraversal {
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         Map<Integer, Integer> inorderValueToIndexMap = new HashMap<>();
-        for(int i = 0; i < inorder.length; i++) inorderValueToIndexMap.put(inorder[i], i);
+        for (int i = 0; i < inorder.length; i++) inorderValueToIndexMap.put(inorder[i], i);
 
-        return constructTreeFromInPost(inorderValueToIndexMap, preorder, inorder, 0, inorder.length - 1, 0);
+        return constructTreeFromInPost(inorderValueToIndexMap, preorder, 0, inorder.length - 1, 0);
     }
 
-    private TreeNode constructTreeFromInPost(Map<Integer,Integer> inorderValueToIndexMap, int[] preorder, int[] inorder, int start, int end, int preRootIndex) {
+    private TreeNode constructTreeFromInPost(Map<Integer, Integer> inorderValueToIndexMap, int[] preorder, int start, int end, int preRootIndex) {
         if (start > end) return null;
 
         int rootValue = preorder[preRootIndex];
         TreeNode root = new TreeNode(rootValue);
-        int inRootIndex = inorderValueToIndexMap.get(root.val);
+        int inRootIndex = inorderValueToIndexMap.get(rootValue);
 
         // preorder  [root][left][right], therefore
         // [left] =  [root-L][left-L][right-L], i.e. root-L == root + 1
         // [right] =  [left][root-R][left-R][right-R], i.e. root-R == (left).length + 1
-        root.right = constructTreeFromInPost(inorderValueToIndexMap, preorder, inorder, inRootIndex + 1, end, preRootIndex + (inRootIndex - start) + 1);
-        root.left = constructTreeFromInPost(inorderValueToIndexMap, preorder, inorder, start, inRootIndex - 1, preRootIndex + 1);
+        root.right = constructTreeFromInPost(inorderValueToIndexMap, preorder, inRootIndex + 1, end, preRootIndex + (inRootIndex - start) + 1);
+        root.left = constructTreeFromInPost(inorderValueToIndexMap, preorder, start, inRootIndex - 1, preRootIndex + 1);
 
         return root;
     }
