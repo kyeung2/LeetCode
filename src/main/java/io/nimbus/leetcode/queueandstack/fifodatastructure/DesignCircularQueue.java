@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.queueandstack;
+package io.nimbus.leetcode.queueandstack.fifodatastructure;
 
 /**
  * https://leetcode.com/explore/learn/card/queue-stack/228/first-in-first-out-data-structure/1337/
@@ -33,9 +33,6 @@ public class DesignCircularQueue {
             // if empty
             if (isEmpty()) {
                 head = 0;
-                tail = 0;
-                data[0] = value;
-                return true;
             }
 
             // normal situation. we modulo size to loop back round.
