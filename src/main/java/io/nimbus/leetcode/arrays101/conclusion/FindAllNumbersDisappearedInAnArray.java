@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.toSet;
 /**
  * https://leetcode.com/explore/learn/card/fun-with-arrays/523/conclusion/3270/
  */
-public class FinalAllNumbersDisappearedInAnArray {
+public class FindAllNumbersDisappearedInAnArray {
 
 
     public List<Integer> findDisappearedNumbers(int[] nums) {
@@ -48,6 +48,6 @@ public class FinalAllNumbersDisappearedInAnArray {
 
     public static void main(String[] args) {
 
-        System.out.println(new FinalAllNumbersDisappearedInAnArray().findDisappearedNumbers(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
+        System.out.println(new FindAllNumbersDisappearedInAnArray().findDisappearedNumbers(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
     }
 }
