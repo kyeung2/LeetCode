@@ -12,34 +12,33 @@ public class NumberOfIslands {
         if (grid == null) return 0;
 
         int islands = 0;
-        char[][] mutableGrid = grid;// just to not mess with the original argument.
-        for (int i = 0; i < mutableGrid.length; i++)
-            for (int j = 0; j < mutableGrid[i].length; j++) {
+        for (int i = 0; i < grid.length; i++)
+            for (int j = 0; j < grid[i].length; j++) {
 
 
-                if (mutableGrid[i][j] == '1') {
-                    sinkConnectedLand(mutableGrid, i, j);
+                if (grid[i][j] == '1') {
+                    sinkConnectedLand(grid, i, j);
                     islands++;
                 }
             }
         return islands;
     }
 
-    void sinkConnectedLand(char[][] mutableGrid, int i, int j) {
+    void sinkConnectedLand(char[][] grid, int i, int j) {
 
         // if array out of bounds or water return 0
-        if (i < 0 || i == mutableGrid.length || j < 0 || j == mutableGrid[i].length || mutableGrid[i][j] == '0')
+        if (i < 0 || i == grid.length || j < 0 || j == grid[i].length || grid[i][j] == '0')
             return;
 
         // the importance is that all "connected" land, will be zeroed, turned into water 1->0. so the calling code will
         // only go into another recursive call on another piece of land.
-        mutableGrid[i][j] = '0';// sink the 1 into a 0.
+        grid[i][j] = '0';// sink the 1 into a 0.
 
         // repeat for adjacent cardinal positions
-        sinkConnectedLand(mutableGrid, i + 1, j);
-        sinkConnectedLand(mutableGrid, i - 1, j);
-        sinkConnectedLand(mutableGrid, i, j + 1);
-        sinkConnectedLand(mutableGrid, i, j - 1);
+        sinkConnectedLand(grid, i + 1, j);
+        sinkConnectedLand(grid, i - 1, j);
+        sinkConnectedLand(grid, i, j + 1);
+        sinkConnectedLand(grid, i, j - 1);
     }
 
 
