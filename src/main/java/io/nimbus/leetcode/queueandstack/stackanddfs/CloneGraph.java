@@ -28,15 +28,13 @@ public class CloneGraph {
         }
     }
 
-
     public Node cloneGraph(Node node) {
         if (node == null) return null;
-        Map<Integer, Node> cloned = new HashMap<>();
-        return clone(node, cloned);
+        return clone_recurse(node, new HashMap<>());
     }
 
     // recursive, call-stack implementation.
-    public Node clone(Node n, Map<Integer, Node> cloned) {
+    public Node clone_recurse(Node n, Map<Integer, Node> cloned) {
 
         if (cloned.containsKey(n.val))
             return cloned.get(n.val);
@@ -45,7 +43,7 @@ public class CloneGraph {
         cloned.put(clone.val, clone);
 
         for (Node neighbor : n.neighbors) {
-            clone.neighbors.add(clone(neighbor, cloned));
+            clone.neighbors.add(clone_recurse(neighbor, cloned));
         }
 
         return clone;
