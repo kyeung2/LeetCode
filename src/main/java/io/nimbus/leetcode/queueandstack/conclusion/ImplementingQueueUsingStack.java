@@ -7,6 +7,9 @@ import java.util.Deque;
  * https://leetcode.com/explore/learn/card/queue-stack/239/conclusion/1386/
  */
 public class ImplementingQueueUsingStack {
+
+
+    // got this on my own, good.
     static class MyQueue {
 
         private final Deque<Integer> stack;

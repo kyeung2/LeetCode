@@ -7,6 +7,11 @@ import java.util.Queue;
  * https://leetcode.com/explore/learn/card/queue-stack/239/conclusion/1387/
  */
 public class ImplementingStackUsingQueue {
+
+
+
+    // got this on my own, good. though calling some of the methods can break this implementation.
+    // could be made more robust.
     static class MyStack {
 
         private final Queue<Integer> queue;
