@@ -12,7 +12,12 @@ public class KeysAndRooms {
 
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
 
+
+        // the solution also used a dfs, which is more appropriate as you are not visiting neighbours
+        // but guided by the keys to the next iteration.
         Deque<Integer> keys = new ArrayDeque<>();
+
+        // the solution on the site used a boolean[] visited, uses less space than my solution.
         Set<Integer> visitedRooms = new HashSet<>();
 
         // initially room 0 is unlocked.
