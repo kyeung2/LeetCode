@@ -10,6 +10,20 @@ import java.util.Deque;
  */
 public class ReverseLinkedList {
 
+
+    public ListNode reverseList_clean_recursive(ListNode head) {
+        /* recursive solution */
+        return reverseListInt(head, null);
+    }
+
+    private ListNode reverseListInt(ListNode a, ListNode b) {
+        if (a == null)
+            return b;
+        ListNode next = a.next;
+        a.next = b;
+        return reverseListInt(next, a);
+    }
+
     // couldn't get the recursive on my own..
     // good explanation of the logic https://www.youtube.com/watch?v=MRe3UsRadKw
     public ListNode reverseList_recursive(ListNode head) {
@@ -33,6 +47,9 @@ public class ReverseLinkedList {
         // so over all now it is 4->3->2<-1
 
         // then finally will become so over all now it is 4->3->2->1
+
+        // this reverses the pointers. Crucially, this will be processed in reverse as reverseList_recursive(head.next)
+        // is called recursively until the base case, i.e. the tail case.
         head.next.next = head;
         head.next = null;
 
