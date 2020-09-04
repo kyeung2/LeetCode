@@ -18,7 +18,7 @@ public class NumberOfIslands {
         return true if cur is target;
         for (next : each neighbor of cur) {
             if (next is not in visited) {
-                add next to visted;
+                add next to be visited;
                 return true if DFS(next, target, visited) == true;
             }
         }
