@@ -13,7 +13,6 @@ public class NQueens2 {
     // so far seems like a good explanation https://www.youtube.com/watch?v=wGbuCyNpxIg
     // I understand the algorithm but the isValid I don't understand fully. Need more time going over this one.
     // very beyond me this one. Nice technique but no where close to getting this on my own.
-
     public int totalNQueens(int n) {
         return nQueens(n).size();
     }
@@ -42,7 +41,6 @@ public class NQueens2 {
             }
         }
     }
-
 
     /*
   for valid case the follow will be recursively called for a n=4 input.
