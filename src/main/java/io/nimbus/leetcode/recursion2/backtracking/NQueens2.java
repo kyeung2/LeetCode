@@ -9,7 +9,6 @@ import java.util.Objects;
  */
 public class NQueens2 {
 
-
     // intuition: constraints are 1. not same row, 2. not same column, 2 not same diagonal
     // so far seems like a good explanation https://www.youtube.com/watch?v=wGbuCyNpxIg
     // I understand the algorithm but the isValid I don't understand fully. Need more time going over this one.
@@ -44,34 +43,27 @@ public class NQueens2 {
         }
     }
 
-    // check the constraints
+
+    /*
+  for valid case the follow will be recursively called for a n=4 input.
+  [1]
+  [1,3]
+  [1,3,0]
+  [1,3,0,2]
+   */
+    // check the constraints, 1. not same row, 2. not same column, 2 not same diagonal
     private static boolean isValid(List<Integer> columnPlacements) {
         int rowId = columnPlacements.size() - 1;
-        Integer currentRow = columnPlacements.get(rowId);
-
-        /*
-        for valid case the follow will be recursively called for a n=4 input.
-        [1]
-        [1,3]
-        [1,3,0]
-        [1,3,0,2]
-         */
-        //
         for (int i = 0; i < rowId; i++) {
-            Integer aRow = columnPlacements.get(i);
-            int diff = Math.abs(aRow - currentRow);
-            if (
-
-                    // same row is invalid
-                    diff == 0 ||
-                            // OR.. this checks if 2 columns are in a diagonal,but I can't see why?
-                            diff == rowId - i)
+            int diff = Math.abs(columnPlacements.get(i) - columnPlacements.get(rowId));
+            if (diff == 0  // same row is invalid
+                    ||
+                    diff == rowId - i//  this checks if 2 columns are in a diagonal,but I can't see why?
+            )
                 return false;
         }
-
         return true;
     }
-
 
     // attempted to follow the pseudo code provided in the explanation of backtracking but made errors and gave up
     static class MyAttempt {
