@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * hhttps://leetcode.com/explore/learn/card/queue-stack/230/usage-stack/1361/
+ * https://leetcode.com/explore/learn/card/queue-stack/230/usage-stack/1361/
  */
 public class ValidParentheses {
 
