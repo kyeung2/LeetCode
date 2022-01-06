@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.top100likedquestions;
+package io.nimbus.leetcode.top100likedquestions_medium;
 
 public class NQueenProblem {
 
@@ -9,7 +9,7 @@ public class NQueenProblem {
     }
 
     public static void main(String[] args) {
-        var problem = new NQueenProblem(4);
+        var problem = new NQueenProblem(8);
         problem.solve();
     }
 

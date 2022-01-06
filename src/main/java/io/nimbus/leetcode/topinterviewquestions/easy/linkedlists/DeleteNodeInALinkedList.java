@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.topinterviewquestionseasy.linkedlists;
+package io.nimbus.leetcode.topinterviewquestions.easy.linkedlists;
 
 /**
  * https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/553/
