@@ -9,7 +9,7 @@ public class NQueenProblem {
     }
 
     public static void main(String[] args) {
-        var problem = new NQueenProblem(8);
+        var problem = new NQueenProblem(5);
         problem.solve();
     }
 
