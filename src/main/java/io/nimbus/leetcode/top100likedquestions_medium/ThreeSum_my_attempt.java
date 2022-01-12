@@ -22,8 +22,7 @@ public class ThreeSum_my_attempt {
         Set<List<Integer>> res = new HashSet<>();
         if (nums.length == 0) return new ArrayList<>(res);
         // will be a divide and conquer so O(n log n) speed.
-        // TODO I saw the hints suggested doing this, but I didn't think it was ok to use a library function like this.
-        // live and learn!!!
+        // TODO I saw the hints suggested doing this, but I didn't think it was ok to use a library function like this. live and learn!!!
         Arrays.sort(nums);
 
         // Now the main loop, since its ordered you can get O(n2)
