@@ -2,6 +2,9 @@ package io.nimbus.leetcode.top100likedquestions_medium;
 
 import java.util.*;
 
+/**
+ * https://leetcode.com/problems/3sum/
+ */
 public class ThreeSum_my_attempt {
 
     private static final int TARGET_SUM = 0;
