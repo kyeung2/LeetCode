@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.topinterviewquestions.medium;
+package io.nimbus.leetcode.top100interview.medium;
 
 /**
  * https://leetcode.com/problems/divide-two-integers/

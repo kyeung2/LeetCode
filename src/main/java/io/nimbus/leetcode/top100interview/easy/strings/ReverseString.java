@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.topinterviewquestions.easy.strings;
+package io.nimbus.leetcode.top100interview.easy.strings;
 
 import java.util.Arrays;
 

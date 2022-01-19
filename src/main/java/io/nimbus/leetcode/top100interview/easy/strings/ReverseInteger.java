@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.topinterviewquestions.easy.strings;
+package io.nimbus.leetcode.top100interview.easy.strings;
 
 /**
  * https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/880/

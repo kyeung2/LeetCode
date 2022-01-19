@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.top100likedquestions_medium;
+package io.nimbus.leetcode.top100liked.medium;
 
 /**
  * https://leetcode.com/problems/add-two-numbers/

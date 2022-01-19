@@ -1,4 +1,4 @@
-package io.nimbus.leetcode.topinterviewquestions.medium;
+package io.nimbus.leetcode.top100interview.medium;
 
 /**
  * https://leetcode.com/problems/remove-nth-node-from-end-of-list/
