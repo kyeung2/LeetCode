@@ -3,7 +3,7 @@ package io.nimbus.leetcode.top100liked.medium;
 /**
  * https://leetcode.com/problems/add-two-numbers/
  */
-class Solution {
+class AddTwoNumbers {
 
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

@@ -1,7 +1,6 @@
 package io.nimbus.leetcode.top100interview.medium;
 
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
@@ -11,7 +10,7 @@ public class ValidSudoku_my_attempt {
 
 
     //TODO so I successfully implemented a back tracking solution for finding a valid solution but this was not the question...
-    //TODO what I should have done is follow the question properly, thus even invalid boards are seen to be valid in the
+    //TODO what I should have done is follow the question much more carefully, thus even invalid boards are seen to be valid in the
     // context of the question asked...
     public static void main(String[] args) {
 

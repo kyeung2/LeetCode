@@ -1,6 +1,7 @@
 package io.nimbus.leetcode.top100liked.medium;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * https://leetcode.com/problems/word-search/

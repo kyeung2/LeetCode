@@ -61,6 +61,8 @@ public class JumpGame2 {
             }
             stairs--;// use up the stairs
             if (stairs == 0) {
+
+                //TODO the key insight IMO is that you don't have to jump to continue to iterate through the loop, the progress of the and the iteration are separate things. Drawing it out would have helped.
                 jump++;//no stairs left, now jump
                 stairs = ladder - level;
             }

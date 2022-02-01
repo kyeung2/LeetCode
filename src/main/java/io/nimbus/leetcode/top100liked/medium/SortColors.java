@@ -31,7 +31,9 @@ public class SortColors {
         for (int i = 0; i < nums.length; i++) {
             if (i < count0) {
                 nums[i] = 0;
-            } else if (i < count0 + count1) {
+            }
+            //TODO perhaps the most intuitive and I like the count0 + count1
+            else if (i < count0 + count1) {
                 nums[i] = 1;
             } else {
                 nums[i] = 2;
@@ -42,6 +44,7 @@ public class SortColors {
 
     public void sortColors_one_pass(int[] nums) {
         // 1-pass
+        //TODO to be fair this is pretty intuitive once you see it, swap.
         int p1 = 0, p2 = nums.length - 1, index = 0;
         while (index <= p2) {
             if (nums[index] == 0) {
